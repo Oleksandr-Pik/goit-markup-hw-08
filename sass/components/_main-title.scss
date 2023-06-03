@@ -1,0 +1,28 @@
+.main-title {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.62;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-align: center;
+
+  color: var(--text-color-light);
+}
+
+@media screen and (min-width: 480px) {
+    .main-title {
+      width: 360px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+  .main-title {
+    width: 690px;
+    font-size: 44px;
+    line-height: 1.36;
+  }
+}
