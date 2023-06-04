@@ -7,3 +7,9 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
+
+@media screen and (max-width: 767px) {
+  .title {
+    text-align: center;
+  }
+}

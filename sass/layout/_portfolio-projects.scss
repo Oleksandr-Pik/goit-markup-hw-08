@@ -1,5 +1,5 @@
 .projects-btn-list {
-  width: 330px;
+  // width: 330px;
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
@@ -58,9 +58,6 @@
 
 .projects-card-img-thumb {
   position: relative;
-  // display: flex;
-  // justify-content: center;
-
   overflow: hidden;
 }
 
@@ -117,11 +114,30 @@
   color: var(--secondary-text-color);
 }
 
+@media screen and (min-width: 350px) {
+  .projects-btn-list {
+    width: 330px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .text-overlay {
+    font-size: 14px;
+    padding: 40px 20px;
+  }
+}
+
 @media screen and ((min-width: 768px) and (max-width: 1199px)) {
+  .projects-list-link {
+    display: flex;
+    flex-direction: column;
+  }
+
   .projects-card {
     width: 354px;
-    height: 146px;
-}
+    // height: 146px;
+    flex-grow: 1;
+  }
 }
 
 @media screen and (min-width: 768px) {

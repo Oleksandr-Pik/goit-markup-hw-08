@@ -1,4 +1,6 @@
 .mobile-menu-btn {
+  display: flex;
+  flex-direction: column;
   background-color: transparent;
   border: none;
   padding: 0;
@@ -8,6 +10,11 @@
 
 .mobile-menu-btn__icon {
   fill: #000000;
+
+  .mobile-menu-btn:hover &,
+  .mobile-menu-btn:hover & {
+    fill: var(--accent-color);
+  }
 }
 
 .mobile-menu {
@@ -46,15 +53,17 @@
   &:hover,
   &:focus {
     fill: var(--accent-color);
-
   }
 }
 
 .mobile-menu__container {
   position: relative;
+  display: flex;
+  flex-direction: column;
   padding-top: 48px;
   padding-bottom: 48px;
   padding-left: 40px;
+  height: 100%;
 }
 
 .mobile-menu__nav {
@@ -77,8 +86,8 @@
   margin-bottom: 32px;
 }
 
-.mobile-menu__nav {
-  margin-bottom: 300px;
+.mobile-menu__contacts {
+  margin-top: auto;
 }
 
 .mobile-menu__phone-link {
@@ -115,6 +124,7 @@
   font-size: 18px;
   line-height: 1.22;
   letter-spacing: 0.02em;
+  margin-bottom: 40px;
 
   &:not(:last-child) {
     padding-right: 10px;
@@ -128,4 +138,21 @@
 
 .mobile-menu__social-link {
   color: var(--accent-color);
+}
+
+@media screen and (max-width: 479px) {
+  .mobile-menu__nav-link {
+    font-size: 36px;
+  }
+
+  .mobile-menu__nav-item:not(:last-child) {
+    margin-bottom: 28px;
+  }
+
+  .mobile-menu__phone-link {
+    font-size: 28px;
+  }
+  .mobile-menu__email {
+    margin-bottom: 56px;
+  }
 }
